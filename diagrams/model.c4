@@ -1,0 +1,16 @@
+model {
+  acme = system 'ACME Web App' {
+    description 'An ACME special app to help that Wile E. Coyote'
+
+    ui = container 'Web App'
+    api = container 'Service API'
+    db = container 'Database'
+
+    ui -> api 'UI calls the API to help users'
+    api -> db 'API interacts with database'
+  }
+
+  coyote = actor 'Wile E. Coyote'
+
+  coyote -> acme.ui 'Orders new gadgets and components to trap that pesky Roadrunner'
+}
