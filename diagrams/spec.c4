@@ -1,0 +1,12 @@
+specification {
+  element actor {
+    style {
+      shape person
+      color green
+    }
+  }
+
+  element system
+  element container
+  element component
+}
