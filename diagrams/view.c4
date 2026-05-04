@@ -1,0 +1,9 @@
+views {
+  view index {
+    title 'System Overview'
+    description 'High-level overview of ACME apps'
+
+    include *
+    include acme.*
+  }
+}
