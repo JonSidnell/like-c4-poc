@@ -2,15 +2,45 @@ model {
   acme = system 'ACME Web App' {
     description 'An ACME special app to help that Wile E. Coyote'
 
-    ui = container 'Web App'
-    api = container 'Service API'
-    db = container 'Database'
+    ui = container 'Web App' {
+      description 'SPA web application for ACME customers to order gadgets and components'
+      technology 'React / TypeScript'
 
-    ui -> api 'UI calls the API to help users'
-    api -> db 'API interacts with database'
+      style {
+        icon azure:static-apps
+      }
+    }
+
+    api = container 'Service API' {
+      description 'API powering the UI and providing business logic and data access'
+      technology '.NET 10'
+
+      style {
+        icon azure:function-apps
+      }
+    }
+
+    db = container 'Database' {
+      description 'Relational database storing ACME application data'
+      technology 'SQL Azure'
+
+        style {
+          icon azure:sql-database
+        }
+    }
+
+    ui -> api 'UI calls the API to help users' {
+      technology 'HTTP / GraphQL'
+    }
+
+    api -> db 'API interacts with database' {
+      technology 'EF Core'
+    }
   }
 
-  coyote = actor 'Wile E. Coyote'
+  coyote = actor 'Wile E. Coyote' {
+    description 'The main user of the ACME Web App, trying to catch the Roadrunner'
+  }
 
   coyote -> acme.ui 'Orders new gadgets and components to trap that pesky Roadrunner'
 }
