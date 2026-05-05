@@ -14,10 +14,10 @@
   },
   hash: 'hSjboixoXtZw_sjb6jqIEoNm9VXEzEkKI_yh3OuhVrg',
   bounds: {
-    x: -6,
+    x: -12,
     y: -20,
-    width: 925,
-    height: 919,
+    width: 510,
+    height: 1201,
   },
   nodes: [
     {
@@ -82,10 +82,10 @@
       tags: [],
       kind: 'system',
       depth: 1,
-      x: 14,
+      x: 8,
       y: 289,
-      width: 885,
-      height: 590,
+      width: 439,
+      height: 872,
       labelBBox: {
         x: 6,
         y: 0,
@@ -160,8 +160,8 @@
       tags: [],
       technology: '.NET 10',
       kind: 'container',
-      x: 505,
-      y: 356,
+      x: 50,
+      y: 645,
       width: 351,
       height: 180,
       labelBBox: {
@@ -197,8 +197,8 @@
       tags: [],
       technology: 'SQL Azure',
       kind: 'container',
-      x: 504,
-      y: 657,
+      x: 52,
+      y: 939,
       width: 353,
       height: 180,
       labelBBox: {
@@ -284,15 +284,15 @@
         ],
       ],
       labelBBox: {
-        x: 426,
-        y: 442,
+        x: 223,
+        y: 569,
         width: 184,
         height: 39,
       },
       controlPoints: [
         {
-          x: 443,
-          y: 442,
+          x: 223,
+          y: 580,
         },
       ],
       navigateTo: null,
@@ -330,15 +330,15 @@
         ],
       ],
       labelBBox: {
-        x: 680,
-        y: 578,
+        x: 226,
+        y: 862,
         width: 174,
         height: 39,
       },
       controlPoints: [
         {
-          x: 679,
-          y: 589,
+          x: 226,
+          y: 871,
         },
       ],
       navigateTo: null,
