@@ -46,6 +46,9 @@ jobs:
       - name: Setup publishing folder structure
         run: mkdir -p ./publish-pages
 
+      - name: Copy docs to publishing folder
+        run: cp -RTv ./docs ./publish-pages
+
       - name: Copy C4 to diagrams folder
         run: cp -RTv ./dist ./publish-pages/diagrams
 
