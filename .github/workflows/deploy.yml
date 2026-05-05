@@ -43,13 +43,16 @@ jobs:
           base: ${{ steps.pages.outputs.base_path }}
           likec4-version: latest
 
+      - name: Setup publishing folder structure
+        run: mkdir -p ./publish-pages
+
       - name: Copy C4 to diagrams folder
-        run: cp -r ./dist/*.* ./diagrams
+        run: cp -RTv ./dist ./publish-pages/diagrams
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
+          path: ./publish-pages
           
   # Deployment job
   deploy-pages:
