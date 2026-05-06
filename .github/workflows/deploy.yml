@@ -46,6 +46,9 @@ jobs:
       - name: Setup publishing folder structure
         run: mkdir -p ./publish-pages
 
+      - name: Install MkDocs
+        run: pip install mkdocs
+
       - name: Build MkDocs site
         run: mkdocs build -d ./publish-pages
 
