@@ -5,4 +5,4 @@ nav:
  - Diagrams: ./diagrams
 
 theme:
-  name: readthedocs
+  name: material
