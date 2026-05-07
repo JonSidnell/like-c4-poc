@@ -15,3 +15,10 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+## C4 Diagrams
+You can embed C4 diagrams in-page using the `mkdocs-likec4` plugin:
+
+```likec4-view
+index
+```

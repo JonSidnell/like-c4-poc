@@ -4,5 +4,8 @@ nav:
  - Home: index.md
  - Diagrams: ./diagrams
 
+plugins:
+  - likec4
+
 theme:
   name: material
