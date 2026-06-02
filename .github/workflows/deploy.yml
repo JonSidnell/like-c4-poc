@@ -40,20 +40,20 @@ jobs:
           output: dist
           # required if you don't set a custom domain for the repository
           # https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites
-          base: ${{ steps.pages.outputs.base_path }}/diagrams
+          base: ${{ steps.pages.outputs.base_path }}/diagrams/c4
           likec4-version: latest
 
       - name: Setup publishing folder structure
         run: mkdir -p ./publish-pages
 
       - name: Install MkDocs
-        run: pip install mkdocs mkdocs-material mkdocs-likec4
+        run: pip install mkdocs mkdocs-material mkdocs-likec4 mkdocs-drawio
 
       - name: Build MkDocs site
         run: mkdocs build -d ./publish-pages
 
       - name: Copy C4 to diagrams folder
-        run: cp -RTv ./dist ./publish-pages/diagrams
+        run: cp -RTv ./dist ./publish-pages/c4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

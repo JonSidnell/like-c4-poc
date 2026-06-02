@@ -1,24 +1,13 @@
-# Welcome to MkDocs
+# Jon's MkDocs Sandbox
+This site is a place to play with different plugins and features of MkDocs ahead of implementing in real-world projects. It supports viewing plugins in action independently of local environment restrictions.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-## C4 Diagrams
+## Diagram Plugins
+### C4 Diagrams
 You can embed C4 diagrams in-page using the `mkdocs-likec4` plugin:
 
 ```likec4-view
 index
 ```
+### Draw.io Diagrams
+You can embed Draw.io diagrams using the `mkdocs-drawio` plugin:
+![](diagrams/drawio/Sample.drawio)
